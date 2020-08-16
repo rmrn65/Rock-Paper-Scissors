@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Rock Papper Scissors</title>
+		<title>Rock Paper Scissors</title>
 	</head>
 	<body>
 		<script>
-			function GetRandomSymbol(){
+			function GetRandomNumber(){
 				var x = Math.random() * 3;
 				return Math.ceil(x);
 			}
-			
+			function ToSymbol(x){
+				if(x == 1)
+					return "Rock";
+				else if(x == 2)
+					return "Paper";
+				else
+					return "Scissors";
+			}
 		</script>
 	</body>
 </html>
