@@ -17,6 +17,26 @@
 				else
 					return "Scissors";
 			}
+			function playerChooses()
+			{
+				let seleciton = prompt("Choose rock, paper or scissors");
+				//if it refuses to choose
+				if(!seleciton){
+					console.log("You need to pick rock, paper or scissors");
+					return false;
+				}
+				if(seleciton.toLowerCase() == "rock")
+					return "Rock";
+				else if(seleciton.toLowerCase() == "paper")
+					return "Paper";
+				else if(seleciton.toLowerCase() == "scissors")
+					return "Scissors";
+				else
+				{
+					console.log("You need to pick rock, paper or scissors");
+					return false;
+				}
+			}
 		</script>
 	</body>
 </html>
