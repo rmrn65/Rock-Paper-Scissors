@@ -37,6 +37,40 @@
 					return false;
 				}
 			}
+			function playGameRound(){
+				var player = playerChooses();
+				while(player == false){
+					player = playerChooses();
+				}
+				var ai = ToSymbol(GetRandomNumber());
+				if(player == "Rock" )
+				{
+					if(ai == "Rock")
+						return "Tie";
+					else if(ai == "Scissors")
+						return "You win!";
+					else
+						return "You lose!";
+				}
+				else if(player == "Paper")
+				{
+					if(ai == "Rock")
+						return "You win!";
+					else if(ai == "Scissors")
+						return "You lose!";
+					else
+						return "Tie";
+				}
+				else
+				{
+					if(ai == "Rock")
+						return "You lose!";
+					else if(ai == "Scissors")
+						return "Tie";
+					else
+						return "You win!";
+				}
+			}
 		</script>
 	</body>
 </html>
